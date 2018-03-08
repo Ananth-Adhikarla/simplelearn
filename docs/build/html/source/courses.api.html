@@ -1,0 +1,368 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>courses.api package &#8212; SIMPLE E-LEARN 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="courses-api-package">
+<h1>courses.api package<a class="headerlink" href="#courses-api-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-courses.api.permissions">
+<span id="courses-api-permissions-module"></span><h2>courses.api.permissions module<a class="headerlink" href="#module-courses.api.permissions" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="courses.api.permissions.IsEnrolled">
+<em class="property">class </em><code class="descclassname">courses.api.permissions.</code><code class="descname">IsEnrolled</code><a class="headerlink" href="#courses.api.permissions.IsEnrolled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.permissions.BasePermission</span></code></p>
+<dl class="method">
+<dt id="courses.api.permissions.IsEnrolled.has_object_permission">
+<code class="descname">has_object_permission</code><span class="sig-paren">(</span><em>request</em>, <em>view</em>, <em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.permissions.IsEnrolled.has_object_permission" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <cite>True</cite> if permission is granted, <cite>False</cite> otherwise.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-courses.api.serializers">
+<span id="courses-api-serializers-module"></span><h2>courses.api.serializers module<a class="headerlink" href="#module-courses.api.serializers" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="courses.api.serializers.ContentSerializer">
+<em class="property">class </em><code class="descclassname">courses.api.serializers.</code><code class="descname">ContentSerializer</code><span class="sig-paren">(</span><em>instance=None</em>, <em>data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.ContentSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="class">
+<dt id="courses.api.serializers.ContentSerializer.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="headerlink" href="#courses.api.serializers.ContentSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.serializers.ContentSerializer.Meta.fields">
+<code class="descname">fields</code><em class="property"> = ('order', 'item')</em><a class="headerlink" href="#courses.api.serializers.ContentSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.serializers.ContentSerializer.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#courses.api.serializers.ContentSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Content" title="courses.models.Content"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Content</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.serializers.CourseSerializer">
+<em class="property">class </em><code class="descclassname">courses.api.serializers.</code><code class="descname">CourseSerializer</code><span class="sig-paren">(</span><em>instance=None</em>, <em>data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.CourseSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="class">
+<dt id="courses.api.serializers.CourseSerializer.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="headerlink" href="#courses.api.serializers.CourseSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.serializers.CourseSerializer.Meta.fields">
+<code class="descname">fields</code><em class="property"> = ('id', 'subject', 'title', 'slug', 'overview', 'created', 'owner', 'modules')</em><a class="headerlink" href="#courses.api.serializers.CourseSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.serializers.CourseSerializer.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#courses.api.serializers.CourseSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Course" title="courses.models.Course"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Course</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.serializers.CourseWithContentsSerializer">
+<em class="property">class </em><code class="descclassname">courses.api.serializers.</code><code class="descname">CourseWithContentsSerializer</code><span class="sig-paren">(</span><em>instance=None</em>, <em>data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.CourseWithContentsSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#courses.api.serializers.CourseSerializer" title="courses.api.serializers.CourseSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.api.serializers.CourseSerializer</span></code></a></p>
+<dl class="class">
+<dt id="courses.api.serializers.CourseWithContentsSerializer.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="headerlink" href="#courses.api.serializers.CourseWithContentsSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.serializers.CourseWithContentsSerializer.Meta.fields">
+<code class="descname">fields</code><em class="property"> = ('id', 'subject', 'title', 'slug', 'overview', 'created', 'owner', 'modules')</em><a class="headerlink" href="#courses.api.serializers.CourseWithContentsSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.serializers.CourseWithContentsSerializer.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#courses.api.serializers.CourseWithContentsSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Course" title="courses.models.Course"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Course</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.serializers.ItemRelatedField">
+<em class="property">class </em><code class="descclassname">courses.api.serializers.</code><code class="descname">ItemRelatedField</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.ItemRelatedField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.relations.RelatedField</span></code></p>
+<dl class="method">
+<dt id="courses.api.serializers.ItemRelatedField.to_representation">
+<code class="descname">to_representation</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.ItemRelatedField.to_representation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform the <em>outgoing</em> native value into primitive data.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.serializers.ModuleSerializer">
+<em class="property">class </em><code class="descclassname">courses.api.serializers.</code><code class="descname">ModuleSerializer</code><span class="sig-paren">(</span><em>instance=None</em>, <em>data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.ModuleSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="class">
+<dt id="courses.api.serializers.ModuleSerializer.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="headerlink" href="#courses.api.serializers.ModuleSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.serializers.ModuleSerializer.Meta.fields">
+<code class="descname">fields</code><em class="property"> = ('order', 'title', 'description')</em><a class="headerlink" href="#courses.api.serializers.ModuleSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.serializers.ModuleSerializer.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#courses.api.serializers.ModuleSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Module" title="courses.models.Module"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Module</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.serializers.ModuleWithContentsSerializer">
+<em class="property">class </em><code class="descclassname">courses.api.serializers.</code><code class="descname">ModuleWithContentsSerializer</code><span class="sig-paren">(</span><em>instance=None</em>, <em>data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.ModuleWithContentsSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="class">
+<dt id="courses.api.serializers.ModuleWithContentsSerializer.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="headerlink" href="#courses.api.serializers.ModuleWithContentsSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.serializers.ModuleWithContentsSerializer.Meta.fields">
+<code class="descname">fields</code><em class="property"> = ('order', 'title', 'description', 'contents')</em><a class="headerlink" href="#courses.api.serializers.ModuleWithContentsSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.serializers.ModuleWithContentsSerializer.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#courses.api.serializers.ModuleWithContentsSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Module" title="courses.models.Module"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Module</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.serializers.SubjectSerializer">
+<em class="property">class </em><code class="descclassname">courses.api.serializers.</code><code class="descname">SubjectSerializer</code><span class="sig-paren">(</span><em>instance=None</em>, <em>data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.serializers.SubjectSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="class">
+<dt id="courses.api.serializers.SubjectSerializer.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="headerlink" href="#courses.api.serializers.SubjectSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.serializers.SubjectSerializer.Meta.fields">
+<code class="descname">fields</code><em class="property"> = ('id', 'title', 'slug')</em><a class="headerlink" href="#courses.api.serializers.SubjectSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.serializers.SubjectSerializer.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#courses.api.serializers.SubjectSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Subject" title="courses.models.Subject"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Subject</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-courses.api.views">
+<span id="courses-api-views-module"></span><h2>courses.api.views module<a class="headerlink" href="#module-courses.api.views" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="courses.api.views.CourseEnrollView">
+<em class="property">class </em><code class="descclassname">courses.api.views.</code><code class="descname">CourseEnrollView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.views.CourseEnrollView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.views.APIView</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.views.CourseEnrollView.authentication_classes">
+<code class="descname">authentication_classes</code><em class="property"> = (&lt;class 'rest_framework.authentication.BasicAuthentication'&gt;,)</em><a class="headerlink" href="#courses.api.views.CourseEnrollView.authentication_classes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.views.CourseEnrollView.permission_classes">
+<code class="descname">permission_classes</code><em class="property"> = (&lt;class 'rest_framework.permissions.IsAuthenticated'&gt;,)</em><a class="headerlink" href="#courses.api.views.CourseEnrollView.permission_classes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="courses.api.views.CourseEnrollView.post">
+<code class="descname">post</code><span class="sig-paren">(</span><em>request</em>, <em>pk</em>, <em>format=None</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.views.CourseEnrollView.post" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.views.CourseViewSet">
+<em class="property">class </em><code class="descclassname">courses.api.views.</code><code class="descname">CourseViewSet</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.views.CourseViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ReadOnlyModelViewSet</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.views.CourseViewSet.basename">
+<code class="descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#courses.api.views.CourseViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="courses.api.views.CourseViewSet.contents">
+<code class="descname">contents</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.views.CourseViewSet.contents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="courses.api.views.CourseViewSet.enroll">
+<code class="descname">enroll</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.views.CourseViewSet.enroll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.views.CourseViewSet.queryset">
+<code class="descname">queryset</code><em class="property"> = &lt;QuerySet [&lt;Course: Python programing&gt;, &lt;Course: Intro to Python&gt;, &lt;Course: Intro to Python&gt;, &lt;Course: Course 2&gt;, &lt;Course: Course 1&gt;, &lt;Course: Romans 101&gt;]&gt;</em><a class="headerlink" href="#courses.api.views.CourseViewSet.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.views.CourseViewSet.serializer_class">
+<code class="descname">serializer_class</code><a class="headerlink" href="#courses.api.views.CourseViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#courses.api.serializers.CourseSerializer" title="courses.api.serializers.CourseSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.api.serializers.CourseSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.views.CourseViewSet.suffix">
+<code class="descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#courses.api.views.CourseViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.views.SubjectDetailView">
+<em class="property">class </em><code class="descclassname">courses.api.views.</code><code class="descname">SubjectDetailView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.views.SubjectDetailView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.generics.RetrieveAPIView</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.views.SubjectDetailView.queryset">
+<code class="descname">queryset</code><em class="property"> = &lt;QuerySet [&lt;Subject: History&gt;, &lt;Subject: Maths&gt;, &lt;Subject: Music&gt;, &lt;Subject: Programming&gt;]&gt;</em><a class="headerlink" href="#courses.api.views.SubjectDetailView.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.views.SubjectDetailView.serializer_class">
+<code class="descname">serializer_class</code><a class="headerlink" href="#courses.api.views.SubjectDetailView.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#courses.api.serializers.SubjectSerializer" title="courses.api.serializers.SubjectSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.api.serializers.SubjectSerializer</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="courses.api.views.SubjectListView">
+<em class="property">class </em><code class="descclassname">courses.api.views.</code><code class="descname">SubjectListView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#courses.api.views.SubjectListView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.generics.ListAPIView</span></code></p>
+<dl class="attribute">
+<dt id="courses.api.views.SubjectListView.queryset">
+<code class="descname">queryset</code><em class="property"> = &lt;QuerySet [&lt;Subject: History&gt;, &lt;Subject: Maths&gt;, &lt;Subject: Music&gt;, &lt;Subject: Programming&gt;]&gt;</em><a class="headerlink" href="#courses.api.views.SubjectListView.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="courses.api.views.SubjectListView.serializer_class">
+<code class="descname">serializer_class</code><a class="headerlink" href="#courses.api.views.SubjectListView.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#courses.api.serializers.SubjectSerializer" title="courses.api.serializers.SubjectSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.api.serializers.SubjectSerializer</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-courses.api">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-courses.api" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">courses.api package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-courses.api.permissions">courses.api.permissions module</a></li>
+<li><a class="reference internal" href="#module-courses.api.serializers">courses.api.serializers module</a></li>
+<li><a class="reference internal" href="#module-courses.api.views">courses.api.views module</a></li>
+<li><a class="reference internal" href="#module-courses.api">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/source/courses.api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ananth Adhikarla.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/source/courses.api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

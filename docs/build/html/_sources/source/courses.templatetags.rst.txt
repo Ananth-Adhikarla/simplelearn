@@ -1,0 +1,22 @@
+courses.templatetags package
+============================
+
+Submodules
+----------
+
+courses.templatetags.course module
+----------------------------------
+
+.. automodule:: courses.templatetags.course
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: courses.templatetags
+    :members:
+    :undoc-members:
+    :show-inheritance:

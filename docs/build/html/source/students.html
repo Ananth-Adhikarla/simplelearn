@@ -1,0 +1,328 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>students package &#8212; SIMPLE E-LEARN 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="students-package">
+<h1>students package<a class="headerlink" href="#students-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-students.admin">
+<span id="students-admin-module"></span><h2>students.admin module<a class="headerlink" href="#module-students.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-students.forms">
+<span id="students-forms-module"></span><h2>students.forms module<a class="headerlink" href="#module-students.forms" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="students.forms.CourseEnrollForm">
+<em class="property">class </em><code class="descclassname">students.forms.</code><code class="descname">CourseEnrollForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id='id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em>, <em>field_order=None</em>, <em>use_required_attribute=None</em>, <em>renderer=None</em><span class="sig-paren">)</span><a class="headerlink" href="#students.forms.CourseEnrollForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.forms.forms.Form</span></code></p>
+<dl class="attribute">
+<dt id="students.forms.CourseEnrollForm.base_fields">
+<code class="descname">base_fields</code><em class="property"> = {'course': &lt;django.forms.models.ModelChoiceField object at 0x7fb39b0210f0&gt;}</em><a class="headerlink" href="#students.forms.CourseEnrollForm.base_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.forms.CourseEnrollForm.declared_fields">
+<code class="descname">declared_fields</code><em class="property"> = {'course': &lt;django.forms.models.ModelChoiceField object at 0x7fb39b0210f0&gt;}</em><a class="headerlink" href="#students.forms.CourseEnrollForm.declared_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.forms.CourseEnrollForm.media">
+<code class="descname">media</code><a class="headerlink" href="#students.forms.CourseEnrollForm.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-students.models">
+<span id="students-models-module"></span><h2>students.models module<a class="headerlink" href="#module-students.models" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-students.views">
+<span id="students-views-module"></span><h2>students.views module<a class="headerlink" href="#module-students.views" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="students.views.InstructorRegistrationView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">InstructorRegistrationView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.InstructorRegistrationView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.CreateView</span></code></p>
+<dl class="attribute">
+<dt id="students.views.InstructorRegistrationView.form_class">
+<code class="descname">form_class</code><a class="headerlink" href="#students.views.InstructorRegistrationView.form_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.forms.UserCreationForm</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="students.views.InstructorRegistrationView.form_valid">
+<code class="descname">form_valid</code><span class="sig-paren">(</span><em>form</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.InstructorRegistrationView.form_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the form is valid, save the associated model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.InstructorRegistrationView.success_url">
+<code class="descname">success_url</code><em class="property"> = '/course/mine/'</em><a class="headerlink" href="#students.views.InstructorRegistrationView.success_url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.InstructorRegistrationView.template_name">
+<code class="descname">template_name</code><em class="property"> = 'students/instructor/registration.html'</em><a class="headerlink" href="#students.views.InstructorRegistrationView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="students.views.NodeJSView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">NodeJSView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.NodeJSView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></p>
+<dl class="method">
+<dt id="students.views.NodeJSView.relative_url_view">
+<code class="descname">relative_url_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#students.views.NodeJSView.relative_url_view" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.NodeJSView.template_name">
+<code class="descname">template_name</code><em class="property"> = 'students/node_shell/nodeshell.html'</em><a class="headerlink" href="#students.views.NodeJSView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="students.views.PythonInterpreterView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">PythonInterpreterView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.PythonInterpreterView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></p>
+<dl class="method">
+<dt id="students.views.PythonInterpreterView.relative_url_view">
+<code class="descname">relative_url_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#students.views.PythonInterpreterView.relative_url_view" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.PythonInterpreterView.template_name">
+<code class="descname">template_name</code><em class="property"> = 'students/python_interpreter/python_interpreter.html'</em><a class="headerlink" href="#students.views.PythonInterpreterView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="students.views.PythonShellView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">PythonShellView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.PythonShellView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.base.TemplateView</span></code></p>
+<dl class="method">
+<dt id="students.views.PythonShellView.relative_url_view">
+<code class="descname">relative_url_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#students.views.PythonShellView.relative_url_view" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.PythonShellView.template_name">
+<code class="descname">template_name</code><em class="property"> = 'students/python_shell/pshell.html'</em><a class="headerlink" href="#students.views.PythonShellView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="students.views.StudentCourseDetailView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">StudentCourseDetailView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentCourseDetailView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.detail.DetailView</span></code></p>
+<dl class="method">
+<dt id="students.views.StudentCourseDetailView.get_context_data">
+<code class="descname">get_context_data</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentCourseDetailView.get_context_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert the single object into the context dict.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="students.views.StudentCourseDetailView.get_queryset">
+<code class="descname">get_queryset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentCourseDetailView.get_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the <cite>QuerySet</cite> that will be used to look up the object.</p>
+<p>This method is called by the default implementation of get_object() and
+may not be called if get_object() is overridden.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.StudentCourseDetailView.model">
+<code class="descname">model</code><a class="headerlink" href="#students.views.StudentCourseDetailView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Course" title="courses.models.Course"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Course</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.StudentCourseDetailView.template_name">
+<code class="descname">template_name</code><em class="property"> = 'students/course/detail.html'</em><a class="headerlink" href="#students.views.StudentCourseDetailView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="students.views.StudentCourseListView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">StudentCourseListView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentCourseListView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">braces.views._access.LoginRequiredMixin</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.list.ListView</span></code></p>
+<dl class="method">
+<dt id="students.views.StudentCourseListView.get_queryset">
+<code class="descname">get_queryset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentCourseListView.get_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list of items for this view.</p>
+<p>The return value must be an iterable and may be an instance of
+<cite>QuerySet</cite> in which case <cite>QuerySet</cite> specific behavior will be enabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.StudentCourseListView.model">
+<code class="descname">model</code><a class="headerlink" href="#students.views.StudentCourseListView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="courses.html#courses.models.Course" title="courses.models.Course"><code class="xref py py-class docutils literal notranslate"><span class="pre">courses.models.Course</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.StudentCourseListView.template_name">
+<code class="descname">template_name</code><em class="property"> = 'students/course/list.html'</em><a class="headerlink" href="#students.views.StudentCourseListView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="students.views.StudentEnrollCourseView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">StudentEnrollCourseView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentEnrollCourseView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">braces.views._access.LoginRequiredMixin</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.FormView</span></code></p>
+<dl class="attribute">
+<dt id="students.views.StudentEnrollCourseView.course">
+<code class="descname">course</code><em class="property"> = None</em><a class="headerlink" href="#students.views.StudentEnrollCourseView.course" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.StudentEnrollCourseView.form_class">
+<code class="descname">form_class</code><a class="headerlink" href="#students.views.StudentEnrollCourseView.form_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#students.forms.CourseEnrollForm" title="students.forms.CourseEnrollForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">students.forms.CourseEnrollForm</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="students.views.StudentEnrollCourseView.form_valid">
+<code class="descname">form_valid</code><span class="sig-paren">(</span><em>form</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentEnrollCourseView.form_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the form is valid, redirect to the supplied URL.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="students.views.StudentEnrollCourseView.get_success_url">
+<code class="descname">get_success_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentEnrollCourseView.get_success_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the URL to redirect to after processing a valid form.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="students.views.StudentRegistrationView">
+<em class="property">class </em><code class="descclassname">students.views.</code><code class="descname">StudentRegistrationView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentRegistrationView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.CreateView</span></code></p>
+<dl class="attribute">
+<dt id="students.views.StudentRegistrationView.form_class">
+<code class="descname">form_class</code><a class="headerlink" href="#students.views.StudentRegistrationView.form_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.forms.UserCreationForm</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="students.views.StudentRegistrationView.form_valid">
+<code class="descname">form_valid</code><span class="sig-paren">(</span><em>form</em><span class="sig-paren">)</span><a class="headerlink" href="#students.views.StudentRegistrationView.form_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the form is valid, save the associated model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.StudentRegistrationView.success_url">
+<code class="descname">success_url</code><em class="property"> = '/students/courses/'</em><a class="headerlink" href="#students.views.StudentRegistrationView.success_url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="students.views.StudentRegistrationView.template_name">
+<code class="descname">template_name</code><em class="property"> = 'students/student/registration.html'</em><a class="headerlink" href="#students.views.StudentRegistrationView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-students">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-students" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">students package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-students.admin">students.admin module</a></li>
+<li><a class="reference internal" href="#module-students.forms">students.forms module</a></li>
+<li><a class="reference internal" href="#module-students.models">students.models module</a></li>
+<li><a class="reference internal" href="#module-students.views">students.views module</a></li>
+<li><a class="reference internal" href="#module-students">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/source/students.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ananth Adhikarla.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/source/students.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

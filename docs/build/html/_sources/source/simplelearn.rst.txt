@@ -1,0 +1,38 @@
+simplelearn package
+===================
+
+Submodules
+----------
+
+simplelearn.settings module
+---------------------------
+
+.. automodule:: simplelearn.settings
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+simplelearn.urls module
+-----------------------
+
+.. automodule:: simplelearn.urls
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+simplelearn.wsgi module
+-----------------------
+
+.. automodule:: simplelearn.wsgi
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: simplelearn
+    :members:
+    :undoc-members:
+    :show-inheritance:
